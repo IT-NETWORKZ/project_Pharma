@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructure & Facilities</title>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+
+  .main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+  }
+
+.main-container h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* margin-bottom: 1.5rem; */
+    position: relative;
+    text-align: center;
+}
+
+.main-container h2:after {
+    content: "";
+    position: absolute;
+       right: 68%;
+    bottom: 0.5rem;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+.page-title {
+    color: var(--heading-color);
+    /* background-color: var(--background-color); */
+    padding: 25px 0;
+    position: relative;
+}
+
+  .facility-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  }
+
+  .facility-section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .facility-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    overflow: hidden;
+  }
+
+  .facility-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .facility-details {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  .facility-details h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .facility-title {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+  }
+
+  .facility-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .equipment-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+  }
+
+  .equipment-item {
+    position: relative;
+    padding-left: 30px;
+    font-size: 0.95rem;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .equipment-item::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: black;
+    font-weight: bold;
+  }
+
+  .equipment-item:hover {
+    color: #141c29;
+    transform: translateX(5px);
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .equipment-grid {
+      grid-template-columns: 1fr;
+    }
+    .facility-section {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Constructo</h1>
+        </a>
+
+       <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Facility</a></li>
+            <li><a href="team.html">Team</a></li>
+          
+            
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+<div class="main-container">
+  <h2 class="page-title">Our Infrastructure & Facilities</h1>
+
+  <!-- R&D Labs -->
+  <section class="facility-section">
+    <div class="facility-image-wrapper">
+      <img src="assets/img/Manufacturing.jpeg" alt="R&D Lab">
+    </div>
+    <div class="facility-details">
+      <h3 class="facility-title">R&D Labs (1500 sq. ft.)</h2>
+      <p class="facility-description">Our state-of-the-art R&D Laboratory is equipped with:</p>
+      <ul class="equipment-grid">
+        <li class="equipment-item">14 Fume Hoods</li>
+        <li class="equipment-item">Walk-in Fume Hood</li>
+        <li class="equipment-item">Inert Atmosphere Glove Box</li>
+        <li class="equipment-item">Magnetic & Overhead Stirrers</li>
+        <li class="equipment-item">Rotary Evaporators (3 Nos.)</li>
+        <li class="equipment-item">Chiller (–20°C to +20°C)</li>
+        <li class="equipment-item">Hot Air & Vacuum Ovens</li>
+        <li class="equipment-item">Vacuum Pumps</li>
+        <li class="equipment-item">Digital Weighing Balance</li>
+        <li class="equipment-item">Deep Freezer & Refrigerator</li>
+        <li class="equipment-item">Pressure Reactors</li>
+        <li class="equipment-item">Water/Oil Baths</li>
+        <li class="equipment-item">Ice Flake Machine</li>
+        <li class="equipment-item">Scrubbers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pilot Plant -->
+  <section class="facility-section">
+    <div class="facility-image-wrapper">
+      <img src="assets/img/Manufacturing.jpeg" alt="Pilot Plant">
+    </div>
+    <div class="facility-details">
+      <h3 class="facility-title">Pilot Plant (2200 sq. ft.)</h2>
+      <p class="facility-description">Key equipment in the Pilot Plant include:</p>
+      <ul class="equipment-grid">
+        <li class="equipment-item">AGR Reactors – 200 L (2 Nos.)</li>
+        <li class="equipment-item">AGR Reactor – 100 L (1 No.)</li>
+        <li class="equipment-item">AGR Reactor – 50 L (1 No.)</li>
+        <li class="equipment-item">High Vacuum Distillation Unit – 20 L</li>
+        <li class="equipment-item">Process Columns (6 kg and 3 kg capacity)</li>
+        <li class="equipment-item">High-capacity Vacuum Pumps (3000 LPM & 500 LPM)</li>
+        <li class="equipment-item">Nutsche Filter & Centrifuge Filter</li>
+        <li class="equipment-item">Tray Dryer / Vacuum Tray Dryer</li>
+        <li class="equipment-item">Large-capacity Rotary Evaporators (20–50 L)</li>
+        <li class="equipment-item">Cooling Towers (70TR)</li>
+        <li class="equipment-item">Chilling Plant (10TR)</li>
+        <li class="equipment-item">Water Jet Vacuum Pumps</li>
+        <li class="equipment-item">Industrial Scrubber</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- QC Lab -->
+  <section class="facility-section">
+    <div class="facility-image-wrapper">
+      <img src="assets/img/Manufacturing.jpeg" alt="QC Lab">
+    </div>
+    <div class="facility-details">
+      <h3 class="facility-title">Analytical R&D & QC Lab (1000 sq. ft.)</h2>
+      <p class="facility-description">Instrumentation includes:</p>
+      <ul class="equipment-grid">
+        <li class="equipment-item">Shimadzu HPLC System</li>
+        <li class="equipment-item">Shimadzu GC System</li>
+        <li class="equipment-item">Lab India KAFI+ KF Titrator</li>
+        <li class="equipment-item">Flash Chromatography / Prep-HPLC Systems</li>
+        <li class="equipment-item">Wet Chemistry Fume Hood</li>
+        <li class="equipment-item">Muffle Furnace</li>
+        <li class="equipment-item">pH Meter</li>
+        <li class="equipment-item">10 KVA UPS Backup</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+         <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
+        </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="research&development.html">Research & Development</a></li>
+            <li><a href="ManufacturingFacilities.html">Manufacturing Facilities</a></li>
+            <li><a href="OurClients.html">Our Clients</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Constructo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="www.kavinindia.com"><strong>Kavin India Pvt Ltd.</strong></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
