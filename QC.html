@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infrastructure & Facilities</title>
-  <!-- Favicons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -19,138 +19,85 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
+    <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-
-
-  .main-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 20px;
-    text-align: justify;
-  }
-
-.main-container h2{
-    font-size: 2.5rem;
-    font-weight: 700;
-    /* margin-bottom: 1.5rem; */
-    position: relative;
-    text-align: center;
+ <style>
+    .terms-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
 }
 
-.main-container h2:after {
-    content: "";
-    position: absolute;
-       right: 64%;
-    bottom: 0.5rem;
-    width: 80px;
-    height: 4px;
-    background-color: var(--accent-color);
+.terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.page-title {
-    color: var(--heading-color);
-    /* background-color: var(--background-color); */
-    padding: 25px 0;
-    position: relative;
+.terms-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
 }
 
-  .facility-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  }
-
-  .facility-section:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .facility-image-wrapper {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    overflow: hidden;
-  }
-
-  .facility-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .facility-details {
-    flex: 2;
-    background-color: #ffffff;
-    padding: 40px;
-  }
-
-  .facility-details h3{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-
-  .facility-title {
-    font-size: 1.8rem;
-    color: var(--heading-color);
-    margin-bottom: 15px;
-  }
-
-  .facility-description {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  .equipment-grid {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 30px;
-  }
-
-  .equipment-item {
-    position: relative;
-    padding-left: 30px;
-    font-size: 0.95rem;
-    transition: transform 0.2s, color 0.2s;
-  }
-
- .equipment-item::before {
-    content: "●";
-    position: absolute;
-    left: 0;
-    color: #000;
-    font-size: 15px;
+.terms-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--accent-color);
 }
 
+.terms-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1b2738;
+}
 
-  .equipment-item:hover {
-    color: #141c29;
-    transform: translateX(5px);
-  }
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
 
-  /* Responsive */
-  @media (max-width: 992px) {
-    .equipment-grid {
-      grid-template-columns: 1fr;
-    }
-    .facility-section {
-      flex-direction: column;
-    }
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section ul li {
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+@media(max-width: 600px){
+  .terms-section {
+    padding: 20px;
   }
-</style>
+  .terms-title {
+    font-size: 2rem;
+  }
+}
+
+  </style>
 </head>
 <body>
-  <header id="header" class="header sticky-top">
+
+        <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -177,7 +124,7 @@
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
+         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Facilities</a></li>
@@ -192,91 +139,123 @@
     </div>
 
   </header>
-<div class="main-container">
-  <h2 class="page-title">Infrastructure & Facilities</h1>
-<p>Our Hosur facility spans half an acre and consists of:</p>
+<div class="terms-container">
+  <h2 class="terms-title">Quality Control (QC)</h2>
 
-<p>A two-floor RCC building (~2000 sq. ft.) housing the R&D and QC laboratories</p>
+  <div class="terms-section">
+    <p><strong>Ensuring Purity, Precision & Compliance in Every Raw Material We Deliver</strong></p>
+    <p>At <strong>MYRTACE HEALTHCARE PRIVATE LIMITED</strong>, Quality Control is the backbone of our pharmaceutical raw material manufacturing process. We follow stringent testing, documentation, and compliance standards to ensure that every batch of raw materials meets global pharmacopoeial requirements and exceeds customer expectations.</p>
+  </div>
 
-<p>Two industrial sheds (~3500 sq. ft.) for process development and scale-up</p>
+  <div class="terms-section">
+    <h3>Our QC operations are aligned with:</h3>
+    <ul>
+      <li>GMP / cGMP guidelines</li>
+      <li>Pharmacopoeias: IP, BP, USP, EP</li>
+      <li>ICH Q2, Q3, Q7 standards</li>
+      <li>ISO quality systems</li>
+      <li>Regulatory requirements of domestic & international markets</li>
+    </ul>
+  </div>
 
-<p>Our Labs (R&D, Process Development Labs, Pilot Plant & QC Lab) are equipped with all the essential necessary equipment that are required for organic synthesis. The existing facilities are listed below.</p>
-  <!-- R&D Labs -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility1.png" alt="R&D Lab">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">R&D Labs (1500 sq. ft.)</h2>
-      <p class="facility-description">Our state-of-the-art R&D Laboratory is equipped with:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">14 Fume Hoods</li>
-        <li class="equipment-item">Walk-in Fume Hood</li>
-        <li class="equipment-item">Inert Atmosphere Glove Box</li>
-        <li class="equipment-item">Magnetic & Overhead Stirrers</li>
-        <li class="equipment-item">Rotary Evaporators (3 Nos.)</li>
-        <li class="equipment-item">Chiller (–20°C to +20°C)</li>
-        <li class="equipment-item">Hot Air & Vacuum Ovens</li>
-        <li class="equipment-item">Vacuum Pumps</li>
-        <li class="equipment-item">Digital Weighing Balance</li>
-        <li class="equipment-item">Deep Freezer & Refrigerator</li>
-        <li class="equipment-item">Pressure Reactors</li>
-        <li class="equipment-item">Water/Oil Baths</li>
-        <li class="equipment-item">Ice Flake Machine</li>
-        <li class="equipment-item">Scrubbers</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>Our QC Capabilities</h3>
+    <p><strong>1. Advanced Analytical Laboratories</strong></p>
+    <ul>
+      <li>Fully equipped laboratories for HPLC, GC, UV-Visible Spectrophotometry, FTIR, Karl Fischer Titration, Polarimetry</li>
+      <li>Analytical Balances, pH & Conductivity Meters, Melting Point & Loss on Drying (LOD) systems</li>
+      <li>Heavy metal & impurity testing instruments</li>
+    </ul>
+    <p>We continuously upgrade our analytical capabilities to meet the evolving needs of the pharmaceutical industry.</p>
+  </div>
 
-  <!-- Pilot Plant -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility2.png" alt="Pilot Plant">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">Pilot Plant (2200 sq. ft.)</h2>
-      <p class="facility-description">Key equipment in the Pilot Plant include:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">AGR Reactors – 200 L (2 Nos.)</li>
-        <li class="equipment-item">AGR Reactor – 100 L (1 No.)</li>
-        <li class="equipment-item">AGR Reactor – 50 L (1 No.)</li>
-        <li class="equipment-item">High Vacuum Distillation Unit – 20 L</li>
-        <li class="equipment-item">Process Columns (6 kg and 3 kg capacity)</li>
-        <li class="equipment-item">High-capacity Vacuum Pumps (3000 LPM & 500 LPM)</li>
-        <li class="equipment-item">Nutsche Filter & Centrifuge Filter</li>
-        <li class="equipment-item">Tray Dryer / Vacuum Tray Dryer</li>
-        <li class="equipment-item">Large-capacity Rotary Evaporators (20–50 L)</li>
-        <li class="equipment-item">Cooling Towers (70TR)</li>
-        <li class="equipment-item">Chilling Plant (10TR)</li>
-        <li class="equipment-item">Water Jet Vacuum Pumps</li>
-        <li class="equipment-item">Industrial Scrubber</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>Testing & Analysis We Perform</h3>
+    <ul>
+      <li><strong>Raw Materials:</strong> Identity verification, purity analysis, moisture content, foreign matter & impurities testing, residual solvent analysis, microbiological screening</li>
+      <li><strong>Intermediates / In-Process Materials:</strong> Monitoring of critical process parameters, assay & impurity profiling, physical parameters, ensuring product consistency</li>
+      <li><strong>Finished Raw Material / API / Excipients:</strong> Assay (active content), related substances, stability and degradation checks, particle size analysis, microbial contamination testing, compliance with pharmacopeial standards</li>
+    </ul>
+  </div>
 
-  <!-- QC Lab -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility3.png" alt="QC Lab">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">Analytical R&D & QC Lab (1000 sq. ft.)</h2>
-      <p class="facility-description">Instrumentation includes:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">Shimadzu HPLC System</li>
-        <li class="equipment-item">Shimadzu GC System</li>
-        <li class="equipment-item">Lab India KAFI+ KF Titrator</li>
-        <li class="equipment-item">Flash Chromatography / Prep-HPLC Systems</li>
-        <li class="equipment-item">Wet Chemistry Fume Hood</li>
-        <li class="equipment-item">Muffle Furnace</li>
-        <li class="equipment-item">pH Meter</li>
-        <li class="equipment-item">10 KVA UPS Backup</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>Documentation & Traceability</h3>
+    <ul>
+      <li>Certificate of Analysis (COA)</li>
+      <li>Batch Manufacturing Records (BMR)</li>
+      <li>Batch Packaging Records (BPR)</li>
+      <li>Standard Test Procedures (STPs)</li>
+      <li>Method Validation Reports</li>
+      <li>Calibration Records</li>
+      <li>Change Control, Deviations & CAPA documentation</li>
+      <li>All documentation follows Good Documentation Practices (GDP)</li>
+    </ul>
+  </div>
 
+  <div class="terms-section">
+    <h3>Quality Assurance Support</h3>
+    <ul>
+      <li>Validate analytical methods</li>
+      <li>Maintain stability programs</li>
+      <li>Conduct internal audits and cross-checks</li>
+      <li>Ensure regulatory readiness</li>
+      <li>Release batches only after complete QC & QA approval</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>Controlled Laboratory Environment</h3>
+    <ul>
+      <li>Segregated QC labs</li>
+      <li>Controlled temperature & humidity zones</li>
+      <li>Clean sampling rooms</li>
+      <li>Protected storage areas for retained samples</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>Packaging & Storage Compliance</h3>
+    <ul>
+      <li>Protection from contamination</li>
+      <li>Correct labeling</li>
+      <li>Compliance with pharmacopeial packaging norms</li>
+      <li>FEFO & FIFO inventory practices</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>Customer-Centric Quality Approach</h3>
+    <ul>
+      <li>Custom testing support as per client requirements</li>
+      <li>Quick turnaround time for QC approvals</li>
+      <li>Transparent reporting</li>
+      <li>Batch-to-batch consistency</li>
+      <li>Regulatory-ready documentation for domestic & export markets</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>Certifications & Compliance (as applicable)</h3>
+    <ul>
+      <li>ISO 9001:2015</li>
+      <li>WHO-GMP</li>
+      <li>cGMP compliance</li>
+      <li>GLP certification</li>
+      <li>Regulatory audits by clients & authorities</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>Contact Us for COA or Product Specifications</h3>
+    <p>Email: <strong>info@myrtace.com</strong></p>
+    <p>Registered Office Address: 35A, basement, Rahat Plaza No 172, Arcot Road, Vadapalani, Chennai 600026</p>
+    <p>R&D Lab and Pilot Plant Facility: Plot No 29, 2nd Main Road, Opposite to Elofic, SIPCOT Phase 2, Hosur, Tamil Nadu 535109</p>
+    <p>Phone: +91 9710709267</p>
+  </div>
 </div>
-  <footer id="footer" class="footer dark-background">
+
+
+    <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -368,3 +347,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+ <style>
+    .terms-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+.terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.terms-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+.terms-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--accent-color);
+}
+
+.terms-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1b2738;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section ul li {
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+@media(max-width: 600px){
+  .terms-section {
+    padding: 20px;
+  }
+  .terms-title {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+        <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@myrtace.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9710709267</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+       <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+         <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Facilities</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+<div class="terms-container">
+  <h2 class="terms-title">Career Opportunities</h2>
+
+  <!-- Tabs Navigation -->
+  <ul class="nav nav-tabs" id="careerTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="jobs-tab" data-bs-toggle="tab" data-bs-target="#jobs" type="button" role="tab" aria-controls="jobs" aria-selected="true">Job Openings</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="internships-tab" data-bs-toggle="tab" data-bs-target="#internships" type="button" role="tab" aria-controls="internships" aria-selected="false">Internship Opportunities</button>
+    </li>
+  </ul>
+
+  <!-- Tabs Content -->
+  <div class="tab-content mt-4" id="careerTabsContent">
+    <!-- Job Openings Tab -->
+    <div class="tab-pane fade show active" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+
+      <div class="terms-section">
+        <h3>1. Quality Control (QC) Chemist</h3>
+        <ul>
+          <li>Qualifications: B.Sc / M.Sc in Chemistry, Pharmaceutical Chemistry, or related field</li>
+          <li>Experience: 0–3 years (entry), 3–7 years (senior)</li>
+          <li>Responsibilities: Chemical and instrumental analysis, stability studies, COA preparation, adherence to GLP/GMP, investigation of deviations</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>2. Quality Assurance (QA) Executive</h3>
+        <ul>
+          <li>Qualifications: B.Pharm / M.Pharm / M.Sc (Chemistry/Pharma)</li>
+          <li>Experience: 1–5 years</li>
+          <li>Responsibilities: SOP/BMR/BPR management, change control, deviations, CAPA, validation, audits, GMP compliance, batch release</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>3. Production / Manufacturing Officer</h3>
+        <ul>
+          <li>Qualifications: B.Pharm / M.Pharm / B.Sc (Chemistry)</li>
+          <li>Experience: 0–5 years</li>
+          <li>Responsibilities: Operate and monitor FBD, RMG, tablet press, coating machines, batch execution, coordinate with QA/QC, maintain records</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>4. Regulatory Affairs (RA) Officer</h3>
+        <ul>
+          <li>Qualifications: B.Pharm / M.Pharm (Regulatory Affairs preferred)</li>
+          <li>Experience: 1–4 years</li>
+          <li>Responsibilities: Prepare/review CTD/eCTD dossiers, product registrations, renewals, variations, regulatory liaison, labeling compliance</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>5. Research & Development (R&D) Chemist</h3>
+        <ul>
+          <li>Qualifications: M.Sc (Chemistry) / M.Pharm (Pharmaceutics / Pharmaceutical Chemistry)</li>
+          <li>Experience: 1–6 years</li>
+          <li>Responsibilities: Formulation development, pre-formulation studies, analytical method development, technical reporting, stability & scale-up batches</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>6. Microbiologist</h3>
+        <ul>
+          <li>Qualifications: B.Sc / M.Sc in Microbiology</li>
+          <li>Experience: 0–3 years</li>
+          <li>Responsibilities: Microbial testing, sterility/endotoxin tests, water & environment monitoring, disinfectant validation, documentation</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>7. Packaging Development Executive</h3>
+        <ul>
+          <li>Qualifications: B.Pharm / M.Pharm / B.Tech (Packaging Technology)</li>
+          <li>Experience: 1–4 years</li>
+          <li>Responsibilities: Packaging material selection, vendor coordination, artwork/labeling, compatibility trials, cost-effective solutions</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>8. Machine Operator / Technician</h3>
+        <ul>
+          <li>Qualifications: ITI / Diploma (Mechanical/Electrical) or 12th pass with experience</li>
+          <li>Experience: 1–5 years</li>
+          <li>Responsibilities: Operate blister/strip/tablet press/labeling/filling machines, routine maintenance, BMIs, hygiene and safety compliance</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>9. Sales & Marketing (Pharma Representative)</h3>
+        <ul>
+          <li>Qualifications: Any graduate (Science/Pharma preferred)</li>
+          <li>Experience: 0–3 years</li>
+          <li>Responsibilities: Promote products to doctors/hospitals, achieve sales targets, competitor tracking, CMEs, promotional events</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>10. HR & Admin Executive (Pharma Experience Preferred)</h3>
+        <ul>
+          <li>Qualifications: MBA HR / BBA / Graduate with HR experience</li>
+          <li>Experience: 1–4 years</li>
+          <li>Responsibilities: Recruitment, attendance, payroll, training, documentation, audits, admin coordination</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>11. Store & Inventory Executive</h3>
+        <ul>
+          <li>Qualifications: Graduate (Science preferred)</li>
+          <li>Experience: 1–3 years</li>
+          <li>Responsibilities: Material receipt, inspection, storage, stock maintenance, coordinate QA, issue materials, FEFO/FIFO compliance</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Internship Opportunities Tab -->
+    <div class="tab-pane fade" id="internships" role="tabpanel" aria-labelledby="internships-tab">
+    <div class="terms-section">
+  <h3>Internship Program</h3>
+  <p>At Myrtace Healthcare Pvt Ltd, our Internship Program is designed to give students and research fellows real-world exposure to pharmaceutical manufacturing, quality processes, and research activities. Interns work closely with experienced professionals and gain valuable industry skills that support their academic and career growth.</p>
+</div>
+  <div class="terms-section">
+    <h4>What We Offer</h4>
+    <ul>
+      <li>Hands-on training in QC, QA, Production, and R&D</li>
+      <li>Guidance from industry experts</li>
+      <li>Opportunity to work on live assignments and technical documentation</li>
+      <li>Exposure to GMP, safety practices, and regulatory workflows</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h4>Who Can Apply</h4>
+    <p>Students pursuing degrees in Pharmacy, Chemical Engineering, Biotechnology, Chemistry, or related fields.</p>
+  </div>
+
+
+    <div class="terms-section">
+    <h4>Education Required</h4>
+    <ul>
+      <li>B.Pharm / M.Pharm</li>
+      <li>B.Sc / M.Sc (Chemistry, Biochemistry, Microbiology)</li>
+      <li>B.E / B.Tech (Chemical Engineering, Biotechnology)</li>
+      <li>Diploma in Chemical / Pharmacy streams</li>
+    </ul>
+ 
+    </div>
+  <div class="terms-section">
+    <h4>Age Limit</h4>
+    <ul>
+      <li>Minimum: 18 years</li>
+      <li>Maximum: 28 years (exceptions may be considered based on academic programs)</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h4>Benefits</h4>
+    <ul>
+      <li>Practical industrial experience</li>
+      <li>Certificate upon successful completion</li>
+      <li>Opportunity for future employment based on performance</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h4>How to Apply</h4>
+    <p>Send your resume and department preference to <a href="mailto:info@myrtace.com">info@myrtace.com</a> with the subject “Internship Application – Your Name”.</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+     <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+         <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
+        </a>
+          <p>With 15 years of excellence, we deliver certified pharma raw materials to manufacturing units, ensuring purity, consistency and on-time supply.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/OurClients.html">Our Clients</a></li>
+            <li><a href="/ManufacturingFacilities.html">Manufacturing Facilities</a></li>
+            <li><a href="/CareerPage.html">Career page</a></li>
+            <li><a href="/T&C.html">Terms and Condition</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Product.html">Products</a></li>
+             <li><a href="/QC.html">Quality Control</a></li>
+              <li><a href="/ContractManufacturing.html">Contract Manufacturing / third party Manufacturing</a></li>
+               <li><a href="/Disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="/Blog.html">Blogs / knowlwdge center</a></li>
+            <li><a href="/research&development.html">Research & Development</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Investor relation</a></li>
+            <li><a href="#">Financial Report</a></li> 
+            <li><a href="#">Board meetings</a></li> 
+            <li><a href="#">Share Holder Information</a></li> 
+            <li><a href="#">News & Update / Press release</a></li> 
+            <li><a href="/Work Culture&HRPolicy.html">Work Culture & HR policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Myrtace Healthcare Private Limited</p>
+          <p>Research and Development Centre</p>
+          <p>Plot No. 29, SIPCOT Phase II</p>
+          <p>Hosur, Tamil Nadu, India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 9710709267</span></p>
+          <p><strong>Email:</strong> <span>info@myrtace.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Constructo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="www.kavinindia.com"><strong>Kavin India Pvt Ltd.</strong></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

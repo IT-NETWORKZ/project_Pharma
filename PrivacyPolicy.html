@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infrastructure & Facilities</title>
-  <!-- Favicons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -19,138 +19,85 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
+    <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-
-
-  .main-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 20px;
-    text-align: justify;
-  }
-
-.main-container h2{
-    font-size: 2.5rem;
-    font-weight: 700;
-    /* margin-bottom: 1.5rem; */
-    position: relative;
-    text-align: center;
+ <style>
+    .terms-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
 }
 
-.main-container h2:after {
-    content: "";
-    position: absolute;
-       right: 64%;
-    bottom: 0.5rem;
-    width: 80px;
-    height: 4px;
-    background-color: var(--accent-color);
+.terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.page-title {
-    color: var(--heading-color);
-    /* background-color: var(--background-color); */
-    padding: 25px 0;
-    position: relative;
+.terms-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
 }
 
-  .facility-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  }
-
-  .facility-section:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .facility-image-wrapper {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    overflow: hidden;
-  }
-
-  .facility-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .facility-details {
-    flex: 2;
-    background-color: #ffffff;
-    padding: 40px;
-  }
-
-  .facility-details h3{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-
-  .facility-title {
-    font-size: 1.8rem;
-    color: var(--heading-color);
-    margin-bottom: 15px;
-  }
-
-  .facility-description {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  .equipment-grid {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 30px;
-  }
-
-  .equipment-item {
-    position: relative;
-    padding-left: 30px;
-    font-size: 0.95rem;
-    transition: transform 0.2s, color 0.2s;
-  }
-
- .equipment-item::before {
-    content: "●";
-    position: absolute;
-    left: 0;
-    color: #000;
-    font-size: 15px;
+.terms-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--accent-color);
 }
 
+.terms-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1b2738;
+}
 
-  .equipment-item:hover {
-    color: #141c29;
-    transform: translateX(5px);
-  }
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
 
-  /* Responsive */
-  @media (max-width: 992px) {
-    .equipment-grid {
-      grid-template-columns: 1fr;
-    }
-    .facility-section {
-      flex-direction: column;
-    }
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section ul li {
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+@media(max-width: 600px){
+  .terms-section {
+    padding: 20px;
   }
-</style>
+  .terms-title {
+    font-size: 2rem;
+  }
+}
+
+  </style>
 </head>
 <body>
-  <header id="header" class="header sticky-top">
+
+        <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -170,7 +117,7 @@
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+       <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
          <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
@@ -192,91 +139,118 @@
     </div>
 
   </header>
-<div class="main-container">
-  <h2 class="page-title">Infrastructure & Facilities</h1>
-<p>Our Hosur facility spans half an acre and consists of:</p>
+<div class="terms-container">
 
-<p>A two-floor RCC building (~2000 sq. ft.) housing the R&D and QC laboratories</p>
+  <h2 class="terms-title">Privacy Policy</h2>
 
-<p>Two industrial sheds (~3500 sq. ft.) for process development and scale-up</p>
+  <div class="terms-section">
+    <h3>1. Introduction</h3>
+    <p>This Privacy Policy explains how Myrtace Healthcare Pvt Ltd collects, uses, stores, and protects personal data obtained through the website. By using this website, users agree to the practices described here.</p>
+  </div>
 
-<p>Our Labs (R&D, Process Development Labs, Pilot Plant & QC Lab) are equipped with all the essential necessary equipment that are required for organic synthesis. The existing facilities are listed below.</p>
-  <!-- R&D Labs -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility1.png" alt="R&D Lab">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">R&D Labs (1500 sq. ft.)</h2>
-      <p class="facility-description">Our state-of-the-art R&D Laboratory is equipped with:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">14 Fume Hoods</li>
-        <li class="equipment-item">Walk-in Fume Hood</li>
-        <li class="equipment-item">Inert Atmosphere Glove Box</li>
-        <li class="equipment-item">Magnetic & Overhead Stirrers</li>
-        <li class="equipment-item">Rotary Evaporators (3 Nos.)</li>
-        <li class="equipment-item">Chiller (–20°C to +20°C)</li>
-        <li class="equipment-item">Hot Air & Vacuum Ovens</li>
-        <li class="equipment-item">Vacuum Pumps</li>
-        <li class="equipment-item">Digital Weighing Balance</li>
-        <li class="equipment-item">Deep Freezer & Refrigerator</li>
-        <li class="equipment-item">Pressure Reactors</li>
-        <li class="equipment-item">Water/Oil Baths</li>
-        <li class="equipment-item">Ice Flake Machine</li>
-        <li class="equipment-item">Scrubbers</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>2. Information We Collect</h3>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li><strong>Personal Information:</strong> Name, Email address, Phone number, Postal address, Job application data (resume, qualifications, employment history), and any information voluntarily submitted through forms.</li>
+      <li><strong>Non-Personal / Technical Information:</strong> IP address, Browser type, Device information, Cookies and tracking data, Website navigation patterns, Approximate location.</li>
+      <li><strong>Sensitive Information (If Applicable):</strong> Health-related queries submitted voluntarily, Feedback related to product experience. (We do not collect sensitive health data without user consent.)</li>
+    </ul>
+  </div>
 
-  <!-- Pilot Plant -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility2.png" alt="Pilot Plant">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">Pilot Plant (2200 sq. ft.)</h2>
-      <p class="facility-description">Key equipment in the Pilot Plant include:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">AGR Reactors – 200 L (2 Nos.)</li>
-        <li class="equipment-item">AGR Reactor – 100 L (1 No.)</li>
-        <li class="equipment-item">AGR Reactor – 50 L (1 No.)</li>
-        <li class="equipment-item">High Vacuum Distillation Unit – 20 L</li>
-        <li class="equipment-item">Process Columns (6 kg and 3 kg capacity)</li>
-        <li class="equipment-item">High-capacity Vacuum Pumps (3000 LPM & 500 LPM)</li>
-        <li class="equipment-item">Nutsche Filter & Centrifuge Filter</li>
-        <li class="equipment-item">Tray Dryer / Vacuum Tray Dryer</li>
-        <li class="equipment-item">Large-capacity Rotary Evaporators (20–50 L)</li>
-        <li class="equipment-item">Cooling Towers (70TR)</li>
-        <li class="equipment-item">Chilling Plant (10TR)</li>
-        <li class="equipment-item">Water Jet Vacuum Pumps</li>
-        <li class="equipment-item">Industrial Scrubber</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>3. How We Use the Information</h3>
+    <ul>
+      <li>Respond to inquiries or requests</li>
+      <li>Send newsletters, updates, or alerts (only with consent)</li>
+      <li>Process job applications</li>
+      <li>Provide product information permitted by law</li>
+      <li>Enhance website functionality and user experience</li>
+      <li>Conduct research, analytics, and service improvements</li>
+      <li>Regulatory or safety reporting, if required</li>
+      <li>Prevent fraudulent or unauthorized activities</li>
+    </ul>
+  </div>
 
-  <!-- QC Lab -->
-  <section class="facility-section">
-    <div class="facility-image-wrapper">
-      <img src="assets/img/facility3.png" alt="QC Lab">
-    </div>
-    <div class="facility-details">
-      <h3 class="facility-title">Analytical R&D & QC Lab (1000 sq. ft.)</h2>
-      <p class="facility-description">Instrumentation includes:</p>
-      <ul class="equipment-grid">
-        <li class="equipment-item">Shimadzu HPLC System</li>
-        <li class="equipment-item">Shimadzu GC System</li>
-        <li class="equipment-item">Lab India KAFI+ KF Titrator</li>
-        <li class="equipment-item">Flash Chromatography / Prep-HPLC Systems</li>
-        <li class="equipment-item">Wet Chemistry Fume Hood</li>
-        <li class="equipment-item">Muffle Furnace</li>
-        <li class="equipment-item">pH Meter</li>
-        <li class="equipment-item">10 KVA UPS Backup</li>
-      </ul>
-    </div>
-  </section>
+  <div class="terms-section">
+    <h3>4. Legal Basis for Processing</h3>
+    <ul>
+      <li>User consent</li>
+      <li>Legitimate business interests</li>
+      <li>Compliance with pharmaceutical regulatory obligations</li>
+      <li>Contractual requirements (where applicable)</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>5. Cookies & Tracking Technologies</h3>
+    <p>The website uses cookies for personalization, performance optimization, and analytics. Users may disable cookies via browser settings—but some website features may not function properly.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>6. Sharing of Information</h3>
+    <p>We do not sell or rent personal information. Data may be shared only with:</p>
+    <ul>
+      <li>Authorized employees or departments</li>
+      <li>Regulatory authorities (for pharmacovigilance, safety reporting, audits)</li>
+      <li>Service providers (IT support, analytics, email services)</li>
+      <li>Partners involved in clinical research or collaborations (as legally permitted)</li>
+    </ul>
+    <p>All third parties are obligated to follow strict data protection rules.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>7. Data Security</h3>
+    <p>We use industry-standard security measures (encryption, firewalls, access control). Although strong protective measures are applied, no digital system is 100% risk-free.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>8. Data Retention</h3>
+    <p>Personal data is retained only for the duration needed to fulfill its purpose or comply with legal requirements. Job application data is kept for future opportunities only if the candidate provides consent.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>9. Children’s Privacy</h3>
+    <p>The website is not intended for individuals under 18 years. We do not knowingly collect data from children.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>10. International Transfers</h3>
+    <p>If data is transferred outside the user’s country, safeguards compliant with global data protection laws (GDPR, HIPAA, local regulations) will be applied.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>11. User Rights</h3>
+    <ul>
+      <li>Access their data</li>
+      <li>Correct or update information</li>
+      <li>Request deletion</li>
+      <li>Withdraw consent</li>
+      <li>Request restriction of processing</li>
+      <li>Object to data use for marketing</li>
+      <li>Request a copy of personal data (data portability)</li>
+    </ul>
+    <p>Requests can be made through <strong>info@myrtace.com</strong></p>
+  </div>
+
+  <div class="terms-section">
+    <h3>12. Updates to Privacy Policy</h3>
+    <p>This Privacy Policy may be updated from time to time. The latest version will be posted on this page with the revised date.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>13. Contact Information</h3>
+    <p>
+      Email: info@myrtace.com<br>
+      Registered Office Address: 35A, Basement, Rahat Plaza No.172, Arcot Road, Vadapalani, Chennai 600026<br>
+      R&D Lab and Pilot Plant Facility: Plot No.29, 2nd Main Road, Opposite to Elofic, SIPCOT Phase 2, Hosur, Tamil Nadu 535109<br>
+      Phone: +91 9710709267
+    </p>
+  </div>
 
 </div>
-  <footer id="footer" class="footer dark-background">
+
+     <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -368,3 +342,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+

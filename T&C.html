@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .terms-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+.terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.terms-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+.terms-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--accent-color);
+}
+
+.terms-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1b2738;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section ul li {
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+@media(max-width: 600px){
+  .terms-section {
+    padding: 20px;
+  }
+  .terms-title {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+      <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@myrtace.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9710709267</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+         <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="service-details.html">Service Details</a></li>
+                <li><a href="project-details.html">Project Details</a></li>
+                <li><a href="quote.html">Quote Form</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+   
+  <div class="terms-container">
+
+  <h2 class="terms-title">Terms & Conditions</h2>
+
+  <div class="terms-section">
+    <h3>1. Acceptance of Terms</h3>
+    <p>
+      By accessing or using this website, users agree to comply with these Terms & Conditions.
+      Continued use of the website indicates acceptance of any future updates.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>2. Company Information</h3>
+    <p>
+      This website is owned and managed by Myrtace Healthcare Pvt Ltd, a registered
+      pharmaceutical organization operating under national and international regulations.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>3. Purpose of the Website</h3>
+    <p>
+      This website provides general information about our company, products, services,
+      research activities and corporate updates. It is not a substitute for medical advice.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>4. Product & Medical Information Disclaimer</h3>
+    <p>
+      Information about pharmaceutical products is not intended for promotion unless permitted.
+      Product information may differ by country. Users should consult healthcare professionals
+      before using any medication.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>5. No Medical Advice</h3>
+    <p>
+      This website does not provide medical, diagnostic, or clinical advice. Users must seek
+      professional healthcare guidance for medical decisions.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>6. Intellectual Property Rights</h3>
+    <p>
+      All text, images, videos, graphics, logos and documents are owned by the company or its
+      licensors. No content may be reproduced or distributed without written permission.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>7. Use of Website</h3>
+    <p>
+      Users agree not to misuse the website, hack, disrupt functionality or engage in illegal
+      activities.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>8. Accuracy of Information</h3>
+    <p>
+      While efforts are made to ensure accuracy, information may become outdated due to
+      scientific or regulatory changes. The company is not responsible for inaccuracies.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>9. Third-Party Links</h3>
+    <p>
+      External links are for user convenience. The company is not responsible for external
+      content or privacy policies.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>10. Data Privacy & Security</h3>
+    <p>
+      Personal data is handled according to our Privacy Policy. While security measures are
+      implemented, complete protection against cyber threats is not guaranteed.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>11. Cookies & Tracking Technologies</h3>
+    <p>
+      The website may use cookies, analytics tools and tracking technologies. Users may manage
+      cookie preferences through browser settings.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>12. Regulatory Compliance</h3>
+    <p>
+      Product information complies with Drug & Cosmetic Act, FDA/EMA guidelines and local
+      regulations. Some information may be restricted regionally.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>13. Future Technologies & Digital Tools</h3>
+    <p>
+      Digital tools such as AI chat, symptom checkers or VR demos are for educational use only.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>14. User-Generated Content</h3>
+    <p>
+      Users grant the company a non-exclusive license to use submitted comments or content.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>15. Limitation of Liability</h3>
+    <p>
+      The company is not liable for damages arising from website use, errors, third-party content
+      or unauthorized data access.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>16. Indemnity</h3>
+    <p>
+      Users agree to indemnify the company from claims arising from misuse or violations.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>17. Website Availability</h3>
+    <p>
+      The company may suspend or discontinue the website without prior notice.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>18. Updates to Terms & Conditions</h3>
+    <p>
+      Terms may be revised to match regulatory or operational changes. Updates will be posted here.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>19. Governing Law & Jurisdiction</h3>
+    <p>
+      These terms are governed by Indian law. Disputes fall under Chennai jurisdiction.
+    </p>
+  </div>
+
+  <div class="terms-section">
+    <h3>20. Contact Information</h3>
+    <p>
+      Email: info@myrtace.com<br>
+      Registered Office: 35A, Basement, Rahat Plaza No.172, Arcot Road, Vadapalani, Chennai 600026<br>
+      R&D Facility: Plot No.29, 2nd Main Road, Opp. Elofic, SIPCOT Phase 2, Hosur, Tamil Nadu 535109<br>
+      Phone: XXX-XXX-XXXX
+    </p>
+  </div>
+
+</div>
+
+    <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+         <img src="assets/img/logo.png" alt="MYRTACE Logo" class="site-logo">
+        </a>
+          <p>With 15 years of excellence, we deliver certified pharma raw materials to manufacturing units, ensuring purity, consistency and on-time supply.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/OurClients.html">Our Clients</a></li>
+            <li><a href="/ManufacturingFacilities.html">Manufacturing Facilities</a></li>
+            <li><a href="/CareerPage.html">Career page</a></li>
+            <li><a href="/T&C.html">Terms and Condition</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Product.html">Products</a></li>
+             <li><a href="/QC.html">Quality Control</a></li>
+              <li><a href="/ContractManufacturing.html">Contract Manufacturing / third party Manufacturing</a></li>
+               <li><a href="/Disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="/Blog.html">Blogs / knowlwdge center</a></li>
+            <li><a href="/research&development.html">Research & Development</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Investor relation</a></li>
+            <li><a href="#">Financial Report</a></li> 
+            <li><a href="#">Board meetings</a></li> 
+            <li><a href="#">Share Holder Information</a></li> 
+            <li><a href="#">News & Update / Press release</a></li> 
+            <li><a href="/Work Culture&HRPolicy.html">Work Culture & HR policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Myrtace Healthcare Private Limited</p>
+          <p>Research and Development Centre</p>
+          <p>Plot No. 29, SIPCOT Phase II</p>
+          <p>Hosur, Tamil Nadu, India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 9710709267</span></p>
+          <p><strong>Email:</strong> <span>info@myrtace.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Constructo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="www.kavinindia.com"><strong>Kavin India Pvt Ltd.</strong></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

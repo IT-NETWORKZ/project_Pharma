@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Constructo Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
- <link href="assets/img/favicon.png" rel="icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,28 +19,90 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
+    <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+ <style>
+    .terms-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
 
-  <!-- =======================================================
-  * Template Name: Constructo
-  * Template URL: https://bootstrapmade.com/constructo-bootstrap-construction-template/
-  * Updated: Aug 30 2025 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+.terms-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.terms-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+.terms-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--accent-color);
+}
+
+.terms-section h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1b2738;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section ul li {
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+@media(max-width: 600px){
+  .terms-section {
+    padding: 20px;
+  }
+  .terms-title {
+    font-size: 2rem;
+  }
+}
+
+  </style>
 </head>
+<body>
 
-<body class="services-page">
-
-  <header id="header" class="header sticky-top">
+        <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a
-              href="mailto:contact@example.com">info@myrtace.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@myrtace.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9710709267</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -68,7 +124,7 @@
         </a>
 
         <nav id="navmenu" class="navmenu">
-        <ul>
+          <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Facilities</a></li>
@@ -83,60 +139,88 @@
     </div>
 
   </header>
+<div class="terms-container">
 
-  <main class="main">
+  <h2 class="terms-title">Disclaimer</h2>
+
+  <div class="terms-section">
+    <h3>1. General Information</h3>
+    <p>The website provides general company, product, and research information for educational and informational purposes only. Content must not be considered medical advice, diagnosis, or treatment recommendations.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>2. No Medical Advice</h3>
+    <p>The website does not provide professional medical guidance. Users should always consult qualified healthcare professionals for health-related decisions.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>3. Product Information Disclaimer</h3>
+    <p>Pharmaceutical product information may vary by country and regulatory approval. Users must refer to the approved package insert, prescribing information, and healthcare professionals for accurate usage guidance. Label information or promotion is strictly avoided.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>4. Accuracy and Completeness</h3>
+    <p>Although efforts are made to maintain accurate and updated information, the company does not guarantee that all information is current or complete. Scientific research, regulatory status, and product updates may change over time.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>5. No Liability</h3>
+    <p>The company shall not be responsible for:</p>
+    <ul>
+      <li>Errors or omissions in website content</li>
+      <li>Reliance on product information without consulting medical professionals</li>
+      <li>Damages related to website use or technical issues</li>
+      <li>External links or third-party website content</li>
+      <li>Unauthorized access, cyberattacks, or security breaches beyond reasonable control</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h3>6. External Links</h3>
+    <p>Links to third-party sites are provided for convenience. The company does not endorse, control, or guarantee the content on external websites.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>7. Digital Tools Disclaimer (AI, Chatbots, Calculators)</h3>
+    <p>If the website uses digital tools such as AI chat assistants, symptom checkers, medical calculators, or virtual AR/VR product demos, these tools are informational only and cannot replace medical expertise or regulatory-approved systems.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>8. Not for Emergency Use</h3>
+    <p>The website cannot be used in emergencies. Users must contact a healthcare provider or local emergency services immediately in such situations.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>9. Forward-Looking Statements</h3>
+    <p>Some content may include research plans, pipeline discussions, or future goals. These statements are subject to risks and uncertainties and may differ from actual results.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>10. Intellectual Property</h3>
+    <p>All content, trademarks, logos, and data belong to Myrtech Healthcare Pvt Ltd. Unauthorized copying or reproduction is prohibited.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>11. Regulatory Compliance</h3>
+    <p>The company adheres to applicable pharmaceutical regulations, including:</p>
+    <ul>
+      <li>Drug & Cosmetic Act</li>
+      <li>FDA/EMA guidelines</li>
+      <li>GMP/GLP requirements</li>
+      <li>Local regulatory authorities</li>
+    </ul>
+    <p>Some product details may be hidden or restricted due to legal compliance.</p>
+  </div>
+
+  <div class="terms-section">
+    <h3>12. Updates to Disclaimer</h3>
+    <p>This Disclaimer may be updated anytime to reflect legal, medical, or regulatory changes.</p>
+  </div>
+
+</div>
 
 
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-
-  <div class="row gy-4">
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-card featured">
-        <div class="icon-and-heading-row">
-          <div class="service-icon">
-            <i class="bi bi-building-gear"></i>
-          </div>
-          <h3>Infrastructure & Facilities</h3>
-        </div>
-
-        <div class="d-flex flex-column">
-          <h3>
-            Our Hosur facility spans half an acre and consists of:
-          </h3>
-          <div class="service-features">
-            <ul style="list-style: circle; padding-left: 20px;">
-              <li>
-                A two-floor RCC building (~2000 sq. ft.) housing the R&D and QC laboratories
-              </li>
-              <li>
-                Two industrial sheds (~3500 sq. ft.) for process development and scale-up
-              </li>
-              <li>
-                Our Labs (R&D, Process Development Labs, Pilot Plant & QC Lab) are equipped with all the essential necessary equipment that are required for organic synthesis. The existing facilities are listed below.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <a href="#" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
-      </div>
-    </div><div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="service-image-block h-100">
-        
-        <img src="assets/img/facilityMain.png" alt="Construction Services" class="img-fluid w-100 h-100 object-fit-cover">
-      </div>
-    </div></div></div>
-
-    </section><!-- /Services Section -->
-
-  </main>
-
-    <footer id="footer" class="footer dark-background">
+      <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -212,8 +296,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -227,7 +310,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
+
+
+
+
